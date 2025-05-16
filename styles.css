@@ -177,6 +177,12 @@ footer {
 }
 
 
+@media screen and (max-width: 768px) {
+    #bg {
+        font-size: 200px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .articles-list {
         grid-template-columns: repeat(1, 3fr);
@@ -189,10 +195,18 @@ footer {
     .reader {
         width: 100%;
     }
+
+    #bg {
+        font-size: 500px;
+    }
 }
 
 @media screen and (max-width: 1400px) {
     .introduction {
         width: 70%;
     } 
+
+    #bg {
+        font-size: 700px;
+    }
 }
