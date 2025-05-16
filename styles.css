@@ -24,7 +24,8 @@ body {
 }   
 
 header {
-    height: 100px;
+    height: fit-content;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,6 +53,17 @@ main {
     align-items: center;
 }
 
+#bg {
+    font-size: 900px;
+    color: hsl(var(--hue), 50%, 70%);
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+
+}
+
 .introduction {
     width: 50%;
     max-width: 750px;
@@ -62,7 +74,8 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 40px;
-    background-color: hsl(var(--hue), 10%, 95%);
+    background-color: hsla(var(--hue), 10%, 95%, 60%);
+    backdrop-filter: blur(5px);
 
     h2 {
         padding: 2px 5px;
@@ -86,7 +99,7 @@ main {
     padding: 20px;
     margin: 5px;
     border: 2px white;
-    height: 150px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,7 +158,6 @@ main {
 }
 
 
-
 footer {    
     background-color: hsl(var(--hue), 5%, 5%);
     height: 40px;
@@ -155,12 +167,25 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row;    
 
     p {
         font-size: 12px;
-        margin-left: 14px;
-        margin-right: 10px;
         color: #ffffff;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .articles-list {
+        grid-template-columns: repeat(1, 3fr);
+    }
+
+    .introduction {
+    width: 80%;
+    }
+
+    .reader {
+        width: 100%;
     }
 }
