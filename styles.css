@@ -21,6 +21,10 @@ a, a:visited {
 
 body {
     background-color: hsl(var(--hue), 20%, 85%);
+    background-image: url(wheelchair.svg);
+    background-size: 60% auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }   
 
 header {
@@ -51,17 +55,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#bg {
-    font-size: 50em;
-    color: hsl(var(--hue), 50%, 70%);
-    z-index: -1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-
 }
 
 .introduction {
@@ -176,19 +169,6 @@ footer {
     }
 }
 
-
-@media screen and (max-width: 400px) {
-    #bg {
-        font-size: 15em !important;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #bg {
-        font-size: 20em !important;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     .articles-list {
         grid-template-columns: repeat(1, 3fr);
@@ -201,18 +181,10 @@ footer {
     .reader {
         width: 100%;
     }
-
-    #bg {
-        font-size: 10em;
-    }
 }
 
 @media screen and (max-width: 1400px) {
     .introduction {
         width: 70%;
-    } 
-
-    #bg {
-        font-size: 40em;   
     }
 }
