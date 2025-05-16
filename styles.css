@@ -54,7 +54,7 @@ main {
 }
 
 #bg {
-    font-size: 900px;
+    font-size: 50em;
     color: hsl(var(--hue), 50%, 70%);
     z-index: -1;
     position: absolute;
@@ -177,9 +177,15 @@ footer {
 }
 
 
+@media screen and (max-width: 400px) {
+    #bg {
+        font-size: 15em !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #bg {
-        font-size: 200px;
+        font-size: 20em !important;
     }
 }
 
@@ -197,7 +203,7 @@ footer {
     }
 
     #bg {
-        font-size: 500px;
+        font-size: 10em;
     }
 }
 
@@ -207,6 +213,6 @@ footer {
     } 
 
     #bg {
-        font-size: 700px;
+        font-size: 40em;   
     }
 }
